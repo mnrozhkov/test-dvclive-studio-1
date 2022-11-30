@@ -1,6 +1,8 @@
 name: Model training with Live Metrics in Studio
 on:
   pull_request:
+env:
+  DEFAULT_STUDIO_ENDPOINT: https://studio.iterative.ai/api/live
 jobs:
   train:
     runs-on: ubuntu-latest
